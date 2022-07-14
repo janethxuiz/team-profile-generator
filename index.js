@@ -1,4 +1,3 @@
-
     <!DOCTYPE html>
     <html lang="en">
     
@@ -12,6 +11,7 @@
         <link rel="stylesheet" href="style.css"/>
         <title>Team Profile</title>
     </head>
+    
     <body>
         <header class="font-italic text-center bg-warning py-5">My Team</header>
         <div class="row m-5 p-3">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </body>
     </html>
