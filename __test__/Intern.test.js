@@ -21,7 +21,7 @@
 const Intern = require("../lib/Intern");
 
 test("creates a new Intern object", () => {
-    const intern = new Intern("Jan", "email", 22, "university");
+    const intern = new Intern("Jan", 22, "email", "university");
     expect(intern.name).toBe("Jan");
     expect(intern.email).toBe("email");
     expect(intern.id).toEqual(expect.any(Number));
@@ -29,26 +29,26 @@ test("creates a new Intern object", () => {
 });
 
 test("gets name", () => {
-    const intern = new Intern("Jan", "email", 22, "university");
+    const intern = new Intern("Jan", 22, "email", "university");
     expect(intern.getName()).toBe("Jan");
 });
 
 test("gets email", () => {
-    const intern = new Intern("Jan", "email", 22, "university");
+    const intern = new Intern("Jan", 22, "email", "university");
     expect(intern.getEmail()).toBe("email");
 });
 
 test("gets ID", () => {
-    const intern = new Intern("Jan", "email", 22, "university");
+    const intern = new Intern("Jan", 22, "email", "university");
     expect(intern.getId()).toEqual(expect.any(Number));
 });
 
 test("gets school", () => {
-    const intern = new Intern("Jan", "email", 22, "university");
+    const intern = new Intern("Jan", 22, "email", "university");
     expect(intern.getSchool()).toBe("university");
 });
 
 test("gets role", () => {
-    const intern = new Intern("Jan", "email", 22, "university");
+    const intern = new Intern("Jan", 22, "email", "university");
     expect(intern.getRole()).toBe("Intern");
 });

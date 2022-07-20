@@ -21,7 +21,7 @@
 const Engineer = require("../lib/Engineer");
 
 test("Creates new engineer object", () => {
-    const engineer = new Engineer("Jan", "email", 22, "github");
+    const engineer = new Engineer("Jan", 22, "email", "github");
     expect(engineer.name).toBe("Jan");
     expect(engineer.email).toBe("email");
     expect(engineer.id).toEqual(expect.any(Number));
@@ -29,22 +29,22 @@ test("Creates new engineer object", () => {
 });
 
 test("gets name", () => {
-    const engineer = new Engineer("Jan", "email", 22, "github");
+    const engineer = new Engineer("Jan", 22, "email", "github");
     expect(engineer.getName()).toBe("Jan");
 });
 
 test("gets email", () => {
-    const engineer = new Engineer("Jan", "email", 22, "github");
+    const engineer = new Engineer("Jan", 22, "email", "github");
     expect(engineer.getEmail()).toBe("email");
 });
 
 test("gets ID", () => {
-    const engineer = new Engineer("Jan", "email", 22, "github");
+    const engineer = new Engineer("Jan", 22, "email", "github");
     expect(engineer.getId()).toEqual(expect.any(Number));
 });
 
 test("gets github", () => {
-    const engineer = new Engineer("Jan", "email", 22, "github");
+    const engineer = new Engineer("Jan", 22, "email", "github");
     expect(engineer.getGithub()).toBe("github");
 });
 
