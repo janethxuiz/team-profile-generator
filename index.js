@@ -6,7 +6,7 @@ const path = require("path");
 const fs = require("fs");
 const OUTPUT_DIR = path.resolve(__dirname, "output")
 const outputPath = path.join(OUTPUT_DIR, "team.html");
-const render = require("./src/page-template.js");
+const render = require("./src/page-template");
 
 const teamMembers = [];
 const idArray = [];
@@ -226,7 +226,6 @@ function appMenu() {
     });
   }
   function buildTeam() {
-    // Create the output directory if the output path doesn't exist
     if (!fs.existsSync(OUTPUT_DIR)) {
       fs.mkdirSync(OUTPUT_DIR)
     }
