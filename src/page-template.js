@@ -116,3 +116,5 @@ module.exports = team => {
 </html>
     `;
 };
+
+// should generate a template with the info you provide
