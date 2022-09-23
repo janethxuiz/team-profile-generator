@@ -8,6 +8,8 @@
 
 ## **_Description of the project_**
 The team-profile-generator is a command line app, When prompted it will ask a set of questions that will give you the ability to generate a team.
+
+
 ![](./module%2010%20team%20generator.gif)
 
 ## **_Walk thru Video_**
